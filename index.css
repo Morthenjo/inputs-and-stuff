@@ -1,0 +1,80 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgb(5, 4, 4), rgba(15, 15, 36, 0.775));
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+
+/* forandrer alle text inputs som ligger i html 
+kan også velge andre "typer" å forandre på, som
+password o.l*/
+input {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem 0;
+  box-shadow: 0.1rem 0.1rem 1rem #0000009c;
+  min-width: 10rem;
+  /* for å legge til et ikon på siden før teksten
+  blir skrevet
+  background-image: ;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  */
+}
+
+fieldset {
+  background: linear-gradient(white, rgb(60, 117, 51));
+  min-width: 33rem;
+  text-align: center;
+  padding: 1rem 2rem 3rem;
+}
+legend {
+  background: linear-gradient(rgb(255, 255, 255), white);
+  font-size: 1.5rem;
+}
+
+option {
+  text-align: center;
+}
+
+select {
+  margin-bottom: 2rem;
+  box-shadow: 0.1rem 0.1rem 1rem #0000009c;
+}
+
+button {
+  font-size: 3rem;
+  left: 0;
+  bottom: 0;
+  margin: 2rem auto 0;
+  background-color: rgb(55, 45, 45);
+  color: white;
+  text-align: center;
+  width: 50%;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+textarea {
+  box-shadow: 0.1rem 0.1rem 1rem #0000009c;
+  resize: none;
+  margin-top: 2rem;
+}
+
+#gsearch {
+  background-image: url("search.png");
+  background-repeat: no-repeat;
+  background-size: 2rem;
+}

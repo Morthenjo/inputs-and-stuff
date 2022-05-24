@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <fieldset>
+      <legend>PersonData</legend>
+      <label>Ditt navn</label></br>
+      <input type="text" id="fname" name="fname" placeholder="Skriv her" /></br>
+      <label>Ditt Passord</label></br>
+      <input type="password" id="pwd" name="pwd" placeholder="Skriv her" /></br>
+      <label>Din E-mail</label></br>
+      <input type="email" id="email" name="email" placeholder="Skriv her" /></br>
+      <label>Her kan du søke</label></br>
+      <input type="search" id="gsearch" name="gsearch" placeholder="Skriv her" />
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Hobby</legend>
+      <label>Hvilken bil liker du best?</label></br>
+      <select id="cars" name="cars">
+        <option value="choose" disabled selected>Ditt valg</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        <option value="Tesla">Tesla</option>
+        <option value="Andre">En som ikke er nevnt her</option>
+        <option value="none">Ingen</option>
+      </select></br>
+      <label>Hva liker du best?</label></br>
+      <select id="media" name="media">
+        <option value="choose" disabled selected>Ditt valg</option>
+        <option value="gaems">Video Spill</option>
+        <option value="Bok">Bøker</option>
+        <option value="TV">Serier/Filmer</option>
+        <option value="weeb">Anime/Manga</option>
+        <option value="Tur">Tur/Reise</option>
+      </select></br>
+      <label>Hvor gammel er du?</label></br>
+      <select id="age" name="age">
+        <option value="choose" disabled selected>Ditt valg</option>
+        <option value="0-13">0-13 år</option>
+        <option value="14-18">14-18 år</option>
+        <option value="19-25">19-25 år</option>
+        <option value="26-39">26-39 år</option>
+        <option value="40+">40+</option>
+      </select></br>
+      <a href="video.html"><button id="button">Klikk her for videoer</button></a>
+    </fieldset>
+    <fieldset>
+      <Legend>Color Picker</Legend>
+      <label for="colorWell">Velg farge på teksten</label></br>
+      <input type="color" value="#ff0000" id="colorWell">
+      <p>Her er tekst du kan forandre fargen på med farge velgeren ovenfor.</p>
+      <label>Se på slideren</label></br>
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </fieldset>
+    <fieldset>
+      <Legend>Random Inputs</Legend>
+      <label>Telefon</label></br>
+      <input type="tel" placeholder="Skriv her"></br>
+      <label>Dato</label></br>
+      <input type="date"></br>
+      <label>Tid</label></br>
+      <input type="time"></br>
+      <label>Velg en ting</label></br>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+    </fieldset>
+    <fieldset>
+      <legend>Tilbakemelding</legend>
+      <label>Her kan du komme med Tilbakemelding på formen</label></br>
+      <textarea name="message" rows="10" cols="30" placeholder="Skriv her"></textarea>
+    </fieldset>
+    <button onclick="alert(`Formen er sendt`) ">Send in formen</button>
+    <script src="index.js"></script>
+  </body>
+</html>
